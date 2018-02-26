@@ -164,7 +164,7 @@ sslstrip2 requires the use of daemon processes. For example:
 
 		dns2proxy.run(interface=interface)
 
-	p = Process(target=dns2proxy.run, args=('wlan0',))
+	p = Process(target=run_dns2proxy, args=('wlan0',))
 	p.start()
 
 	print 'Run the rest of your code here'
